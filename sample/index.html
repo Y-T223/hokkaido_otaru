@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#14202b">
+<title>小樽市総合博物館｜鉄道発祥の地・手宮に残る、蒸気の記憶</title>
+<meta name="description" content="北海道の鉄道発祥地・手宮にある小樽市総合博物館。重要文化財の機関車庫と転車台、動態保存の「しづか号」「アイアンホース号」に出会えます。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14202b; --ink2:#1d2e3c; --brass:#b8934f; --brass-d:#8a6a2f;
+  --paper:#ece4d1; --paper2:#e2d8c0; --text:#2a2a26; --muted:#6b6454;
+  --serif:"Shippori Mincho","Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+  --body:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--text);background:var(--paper);line-height:1.95;font-size:16px;overflow-x:hidden;
+  padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.wrap{width:min(100% - 40px,880px);margin-inline:auto}
+section{padding:72px 0}
+h2{font-family:var(--serif);font-weight:700;font-size:clamp(1.55rem,6vw,2.1rem);line-height:1.5;letter-spacing:.06em;margin-bottom:28px}
+h2::after{content:"";display:block;width:56px;height:2px;background:var(--brass);margin-top:16px}
+p+p{margin-top:1.2em}
+.ph{background:linear-gradient(135deg,#2a3b49,#14202b);overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#f5efe0;background:var(--ink);padding:0}
+.hero .ph{position:absolute;inset:0}
+.hero .ph img{filter:sepia(.25) contrast(1.02)}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(20,32,43,.35) 0%,rgba(20,32,43,.1) 35%,rgba(20,32,43,.92) 100%)}
+.hero .wrap{position:relative;z-index:2;padding:0 0 calc(56px + env(safe-area-inset-bottom))}
+.hero small{display:block;font-size:.85rem;letter-spacing:.2em;color:#e3cf9f;margin-bottom:14px}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(2.2rem,10.5vw,4.2rem);line-height:1.3;letter-spacing:.08em}
+.hero p.lead{margin-top:18px;max-width:30em;font-size:1rem;color:#efe6d0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;margin-top:28px;background:var(--brass);color:#14202b;font-family:var(--serif);font-weight:700;letter-spacing:.12em;text-decoration:none;border:1px solid #d7b878;transition:background .2s}
+.btn:hover{background:#cfa965}
+.rule{height:10px;background:repeating-linear-gradient(90deg,var(--brass) 0 18px,transparent 18px 26px);opacity:.55}
+
+/* strength */
+.strength{background:var(--paper)}
+.strength .big{font-family:var(--serif);font-size:clamp(1.2rem,4.6vw,1.55rem);line-height:1.9;border-left:3px solid var(--brass);padding-left:18px;margin-bottom:28px}
+
+/* history */
+.history{background:var(--ink);color:#e9e1cc}
+.history h2{color:#f5efe0}
+.tl{list-style:none;border-left:1px solid var(--brass);margin-left:6px}
+.tl li{position:relative;padding:0 0 34px 28px}
+.tl li:last-child{padding-bottom:0}
+.tl li::before{content:"";position:absolute;left:-6px;top:.75em;width:11px;height:11px;border-radius:50%;background:var(--brass)}
+.tl b{display:block;font-family:var(--serif);font-size:1.5rem;color:#e3cf9f;letter-spacing:.08em}
+
+/* highlights */
+.hl-item{margin-bottom:56px}
+.hl-item:last-child{margin-bottom:0}
+.hl-item .ph{aspect-ratio:4/3;margin-bottom:22px;border:1px solid var(--brass);outline:6px solid var(--paper);outline-offset:-7px}
+.hl-item h3{font-family:var(--serif);font-size:1.35rem;line-height:1.6;letter-spacing:.05em;margin-bottom:10px}
+.cap{display:inline-block;font-size:.85rem;color:var(--brass-d);letter-spacing:.1em;margin-bottom:6px}
+.hl-sub{background:var(--paper2)}
+
+/* review */
+.rev{background:var(--paper)}
+.card{background:#f6f0e0;border:1px solid #cdbf9c;padding:26px 22px;margin-bottom:22px}
+.stars{color:var(--brass-d);letter-spacing:.2em;font-size:1.15rem;margin-bottom:8px}
+.stars span{color:#c9bb97}
+.card p{font-size:.95rem;line-height:1.95}
+
+/* info */
+.info{background:var(--paper2)}
+dl{border-top:1px solid #bba97f}
+.row{display:block;padding:16px 0;border-bottom:1px solid #bba97f}
+dt{font-family:var(--serif);font-weight:700;color:var(--brass-d);letter-spacing:.1em;font-size:.9rem}
+dd{overflow-wrap:anywhere}
+dd a{text-decoration-color:var(--brass)}
+.map{margin-top:40px}
+.map iframe{display:block;width:100%;height:340px;border:1px solid var(--brass);filter:sepia(.2)}
+.map .btn{display:flex;width:100%;margin-top:0;border-top:0}
+
+/* footer */
+footer{background:var(--ink);color:#d9cfb6;text-align:center;padding:52px 0 calc(40px + env(safe-area-inset-bottom))}
+footer .name{font-family:var(--serif);font-size:1.25rem;letter-spacing:.12em;color:#f5efe0}
+.sns{display:flex;justify-content:center;gap:16px;margin:24px 0}
+.sns a{display:grid;place-items:center;width:52px;height:52px;border:1px solid var(--brass);border-radius:50%;color:#e3cf9f;transition:background .2s,color .2s}
+.sns a:hover{background:var(--brass);color:var(--ink)}
+.sns svg{width:24px;height:24px;fill:currentColor}
+footer small{font-size:.8rem;opacity:.7}
+
+@media(min-width:760px){
+  section{padding:104px 0}
+  body{font-size:17px}
+  .hl-item{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .hl-item:nth-child(even) .ph{order:2}
+  .hl-item .ph{margin-bottom:0}
+  .row{display:grid;grid-template-columns:160px 1fr;gap:20px}
+  .map iframe{height:420px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="ph"><img src="images/1.jpg" alt="夕暮れの手宮に佇む、蒸気機関車の展示" fetchpriority="high"></div>
+  <div class="wrap">
+    <small>北海道・小樽　手宮</small>
+    <h1>鉄道は、<br>ここから始まった。</h1>
+    <p class="lead">北海道の鉄道発祥の地に建つ、小樽市総合博物館。蒸気機関車の鼓動と、百四十年を超える時の重みに触れる一日を。</p>
+    <a class="btn" href="#access">アクセスを見る</a>
+  </div>
+</header>
+<div class="rule" aria-hidden="true"></div>
+
+<section class="strength">
+  <div class="wrap">
+    <h2>歴史の地に、展示がある。</h2>
+    <p class="big">鉄道発祥地の歴史的な土地を活かした展示と保存体制。</p>
+    <p>小樽市総合博物館は、旧手宮線・手宮駅の敷地に建つ博物館です。地域の歴史、科学、そして鉄道文化を幅広く伝え、北海道屈指の博物館として親しまれています。</p>
+    <p>屋内では北海道の鉄道の歴史を模型や映像でたどり、屋外では実際の車両が静かに時を重ねています。物語の舞台に立つような感覚を、ぜひ。</p>
+  </div>
+</section>
+
+<section class="history">
+  <div class="wrap">
+    <h2>博物館のあゆみ</h2>
+    <ol class="tl">
+      <li><b>1956年</b>旧日本郵船小樽支店を利用して「小樽市博物館」を設立。美術を含む人文・自然を対象に、地域の歴史と自然を幅広く紹介する施設として始まりました。</li>
+      <li><b>1985年</b>旧小樽倉庫に移転。交通や科学技術の分野も拡充しました。</li>
+      <li><b>2007年</b>旧小樽交通記念館跡地に、小樽市博物館と小樽市青少年科学技術館を統合。「小樽市総合博物館」として再オープンしました。本館は北海道の鉄道発祥地、旧手宮線・手宮駅の敷地を活用しています。</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>イチオシの見どころ</h2>
+    <article class="hl-item">
+      <div class="ph"><img src="images/2.jpg" alt="機関車庫と転車台を望む風景" loading="lazy"></div>
+      <div>
+        <span class="cap">国指定重要文化財</span>
+        <h3>旧手宮鉄道施設</h3>
+        <p>機関車庫、転車台、鉄道開通起点標跡。北海道の鉄道の始まりを今に伝える、歴史そのものの空間です。</p>
+      </div>
+    </article>
+    <article class="hl-item">
+      <div class="ph"><img src="images/3.jpg" alt="しづか号の客室内部" loading="lazy"></div>
+      <div>
+        <span class="cap">動態保存と運行体験</span>
+        <h3>7106号「しづか号」<br>アイアンホース号</h3>
+        <p>「しづか号」は客室内部に入ることもできます。1909年製、アメリカ製蒸気機関車の「アイアンホース号」とともに、動態保存された機関車の運行体験を楽しめます。</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="rev hl-sub">
+  <div class="wrap">
+    <h2>訪れた方の声</h2>
+    <div class="card">
+      <div class="stars" aria-label="5段階中4">★★★★<span>★</span></div>
+      <p>名前は本館ですが、内容はほとんど鉄道博物館です。入館料は大人1名400円、駐車場は無料でした。屋内は動画や模型で北海道の鉄道の歴史を詳しく展示。屋外は広々として、貨車や客車、転車台、貴重な機関車の実車両が静態保存され、その多くに乗ることもできます。ラッセル車や除雪車など、他ではあまり見られない車両も興味深かったです。屋外車両の劣化が気になるので、末永く保存してほしいと感じました。</p>
+    </div>
+    <div class="card">
+      <div class="stars" aria-label="5段階中5">★★★★★</div>
+      <p>北海道の歴史や自然、鉄道をはじめとした交通などの展示が充実。運河館からは歩いて行けますが、そこそこ離れています。迫力ある蒸気機関車や鉄道資料が揃っていました。「ゴールデンカムイ」の「しづか号」を見たくて訪れ、客室内部にも入れて、シーンが蘇りテンションが上がりました。屋外展示も興味深く、とても素敵な施設です。</p>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="access">
+  <div class="wrap">
+    <h2>施設情報・アクセス</h2>
+    <dl>
+      <div class="row"><dt>施設名</dt><dd>小樽市総合博物館</dd></div>
+      <div class="row"><dt>住所</dt><dd>小樽市手宮1丁目3番6号</dd></div>
+      <div class="row"><dt>電話番号</dt><dd><a href="tel:0134335223">0134-33-2523</a></dd></div>
+      <div class="row"><dt>メール</dt><dd><a href="mailto:museum@city.otaru.lg.jp">museum@city.otaru.lg.jp</a></dd></div>
+      <div class="row"><dt>公式サイト</dt><dd><a href="https://www.city.otaru.lg.jp/categories/bunya/shisetsu/bunka_kanko/museum/" target="_blank" rel="noopener">小樽市公式ページ</a></dd></div>
+    </dl>
+    <div class="map">
+      <iframe title="小樽市総合博物館の地図" src="https://www.google.com/maps?q=%E5%B0%8F%E6%A8%BD%E5%B8%82%E7%B7%8F%E5%90%88%E5%8D%9A%E7%89%A9%E9%A4%A8%20%E5%B0%8F%E6%A8%BD%E5%B8%82%E6%89%8B%E5%AE%AE1%E4%B8%81%E7%9B%AE3%E7%95%AA6%E5%8F%B7&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=%E5%B0%8F%E6%A8%BD%E5%B8%82%E7%B7%8F%E5%90%88%E5%8D%9A%E7%89%A9%E9%A4%A8%20%E5%B0%8F%E6%A8%BD%E5%B8%82%E6%89%8B%E5%AE%AE1%E4%B8%81%E7%9B%AE3%E7%95%AA6%E5%8F%B7" target="_blank" rel="noopener">Googleマップで開く</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="name">小樽市総合博物館</p>
+    <div class="sns">
+      <a href="https://www.facebook.com/otaru.museum/?locale=ja_JP" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.5-3.2h-3.2V8.7c0-.9.4-1.7 1.8-1.7h1.5V4.2S15.5 4 14.3 4c-2.6 0-4.1 1.5-4.1 4.3v2.5H7.5V14h2.7v8z"/></svg></a>
+      <a href="https://www.instagram.com/otarumuseum/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3zm0 1.8A2.7 2.7 0 0 0 4.8 7.5v9a2.7 2.7 0 0 0 2.7 2.7h9a2.7 2.7 0 0 0 2.7-2.7v-9a2.7 2.7 0 0 0-2.7-2.7zM12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 1.8a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4zm4.9-2.6a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg></a>
+    </div>
+    <small>© Otaru Museum LP</small>
+  </div>
+</footer>
+
+</body>
+</html>
